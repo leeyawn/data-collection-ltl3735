@@ -116,6 +116,55 @@ def fetch_issues(repo_full_name: str, state: str = "all", max_issues: int = None
     # 6) Build DataFrame from records
     return pd.DataFrame(issues)
     
+def merge_and_summarize(commits_df, issues_df) -> None:
+    """
+    Merge commits and issues on date and summarize the data.
+    Computes and prints:
+    - Top 5 committers by count
+    - Issue close rate (closed / total)
+    - Average issue open duration
+    """
+    # Convert date columns to datetime for proper joining
+    commits_df['date'] = pd.to_datetime(commits_df['date'])
+    issues_df['created_at'] = pd.to_datetime(issues_df['created_at'])
+    
+    # Create date columns for joining (by day)
+    commits_df['date_day'] = commits_df['date'].dt.date
+    issues_df['created_date'] = issues_df['created_at'].dt.date
+    
+    # Join commits and issues on date
+    merged_df = pd.merge(commits_df, issues_df, left_on='date_day', right_on='created_date', how='outer')
+    
+    print("SUMMARY STATISTICS")
+    print()
+    
+    # Top 5 committers by count
+    print("Top 5 committers by commit count:")
+    top_committers = commits_df['author'].value_counts().head(5)
+    for author, count in top_committers.items():
+        print(f"  {author}: {count} commits")
+    print()
+    
+    # Issue close rate
+    total_issues = len(issues_df)
+    closed_issues = len(issues_df[issues_df['state'] == 'closed'])
+    close_rate = (closed_issues / total_issues * 100) if total_issues > 0 else 0
+    print(f"Issue close rate: {close_rate:.1f}% ({closed_issues}/{total_issues})")
+    print()
+    
+    # Average issue open duration (only for closed issues)
+    closed_issues_with_duration = issues_df[
+        (issues_df['state'] == 'closed') & 
+        (issues_df['open_duration_days'].notna())
+    ]
+    if len(closed_issues_with_duration) > 0:
+        avg_duration = closed_issues_with_duration['open_duration_days'].mean()
+        print(f"Average issue open duration: {avg_duration:.1f} days")
+    else:
+        print("Average issue open duration: N/A (no closed issues with duration data)")
+    print()
+    
+    return merged_df
 
 def main():
     """
@@ -143,6 +192,11 @@ def main():
                     help="Max number of issues to fetch")
     c2.add_argument("--out", required=True, help="Path to output issues CSV")
 
+    # Sub-command: summarize
+    c3 = subparsers.add_parser("summarize", help="Summarize commits and issues from CSV files")
+    c3.add_argument("--commits", required=True, help="Path to commits CSV file")
+    c3.add_argument("--issues", required=True, help="Path to issues CSV file")
+
     args = parser.parse_args()
 
     # Dispatch based on selected command
@@ -154,6 +208,13 @@ def main():
         df = fetch_issues(args.repo, args.state, args.max_issues)
         df.to_csv(args.out, index=False)
         print(f"Saved {len(df)} issues to {args.out}")
+    elif args.command == "summarize":
+        # Load CSV files
+        commits_df = pd.read_csv(args.commits)
+        issues_df = pd.read_csv(args.issues)
+        
+        # Run summary analysis
+        merge_and_summarize(commits_df, issues_df)
 
 if __name__ == "__main__":
     main()

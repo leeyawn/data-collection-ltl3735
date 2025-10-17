@@ -1,0 +1,21 @@
+id,number,title,user,state,created_at,closed_at,comments,open_duration_days
+3524082451,271871,Rate Limit,ademkao-dev,closed,2025-10-17T01:38:04+00:00,2025-10-17T01:39:40+00:00,1,0.0
+3524078463,271870,I canno use copilot in Visual studtio,FrancisZang,open,2025-10-17T01:34:58+00:00,,1,
+3524076367,271869,Length Limit,Jesseray4u,open,2025-10-17T01:33:57+00:00,,1,
+3524061236,271868,Không hỗ trợ gợi ý trong VS Code,NguyenThiQuynhNhu,open,2025-10-17T01:24:33+00:00,,2,
+3524061229,271867,Không hỗ trợ gợi ý trong VS Code,NguyenThiQuynhNhu,closed,2025-10-17T01:24:33+00:00,2025-10-17T01:25:04+00:00,3,0.0
+3524037109,271866,Binaries and executables are moved on different folder.,marjonnmi,open,2025-10-17T01:05:29+00:00,,0,
+3524027994,271865,"I have the error ""Cannot read properties of undefined (reading 'toLowerCase')""",sebastian-lob,open,2025-10-17T00:58:38+00:00,,0,
+3524013643,271863,Integrate Web Search Functionality into GitHub Copilot,iwangbowen,open,2025-10-17T00:48:32+00:00,,0,
+3523959804,271862,Unjustified Consumption of Premium Requests,Fukutsuku,closed,2025-10-17T00:21:55+00:00,2025-10-17T00:23:55+00:00,1,0.0
+3523946624,271861,Endless loops and empty,Tyler-Ouellette,closed,2025-10-17T00:16:48+00:00,2025-10-17T00:28:30+00:00,1,0.0
+3523931346,271859,no response from Copilot but an error!,ArashkKH,open,2025-10-17T00:10:27+00:00,,0,
+3523921670,271858,launch cli in terminal directly requires /login,rebornix,open,2025-10-17T00:07:25+00:00,,0,
+3523905084,271857,mcp autostart: make it configurable on a per-server basis,skissane-medallia,open,2025-10-17T00:02:13+00:00,,0,
+3523866745,271855,chat,yamisenseimaster,open,2025-10-16T23:47:29+00:00,,2,
+3523847061,271852,Cannot read properties of undefined (reading 'toLowerCase'),craxal,open,2025-10-16T23:38:42+00:00,,0,
+3523791859,271850,jsdoc hyphens after a @param tag are not fully ignored,marcustyphoon,open,2025-10-16T23:12:34+00:00,,0,
+3523761054,271848,error,ThreeOneOneZero,closed,2025-10-16T22:58:25+00:00,2025-10-16T23:05:05+00:00,1,0.0
+3523754664,271847,Cannot read properties of ,smitchamwork,closed,2025-10-16T22:55:54+00:00,2025-10-16T23:05:11+00:00,2,0.0
+3523754098,271846,Getting response Cannot read properties of undefined (reading 'toLowerCase'),freos08,closed,2025-10-16T22:55:41+00:00,2025-10-16T23:05:49+00:00,1,0.0
+3523753973,271844,"Dozens of git.exe processes in Windows repo, leading to system thrash",headerjson,open,2025-10-16T22:55:39+00:00,,0,

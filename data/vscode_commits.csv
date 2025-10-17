@@ -1,0 +1,21 @@
+sha,author,email,date,message
+55cdeb577125ddd62e0a6a5d1a292f862f34c2be,Paul,paul_wang347@hotmail.com,2025-10-17T00:06:01+00:00,Add prefer device flow config for GitHub auth  (#271838)
+af6adc61cebb854d26c9b0e065df66f6f560080f,Ladislau Szomoru,3372902+lszomoru@users.noreply.github.com,2025-10-16T23:20:07+00:00,SCM - introduce single selection mode for repositories view (#271831)
+af1cbea727abf8c68e9bb12c3655695112c89950,Tyler James Leonhardt,2644648+TylerLeonhardt@users.noreply.github.com,2025-10-16T23:18:23+00:00,Add `--video` and `--autostart` (#271849)
+e5243d2a178c38c7c48cfbff3cf851c18b4d5a3b,Peng Lyu,penlv@microsoft.com,2025-10-16T23:07:18+00:00,Merge pull request #271845 from microsoft/rebornix/eerie-centipede
+ef4342262138748bac6403648f259acba3f73c24,Peng Lyu,penn.lv@gmail.com,2025-10-16T22:52:52+00:00,Enable sessions view for the team
+0df032fb9f886f574ae3309c5dfb81edade9fd7d,Martin Aeschlimann,martinae@microsoft.com,2025-10-16T21:45:26+00:00,support handoff property in modes (#271710)
+56850a23866471042591e48253d28f2048c8fd64,Osvaldo Ortega,48293249+osortega@users.noreply.github.com,2025-10-16T21:13:29+00:00,Fix for chat uri handler (#271795)
+71a697dd28446a6b12e44bdfe8c69d0a48f90661,Megan Rogge,merogge@microsoft.com,2025-10-16T21:03:01+00:00,"hide copilot terminals by default in insider's, make configurable (#271400)"
+df0eb86a8a791e4cfdf6cb234f03762e94760d51,Martin Aeschlimann,martinae@microsoft.com,2025-10-16T20:00:42+00:00,use isDark to check whether to use a dark or light icon (#271752)
+9d66f9c93f9310be18d491e8cbd8c712f0fcd7bd,Matt Bierner,12821956+mjbvz@users.noreply.github.com,2025-10-16T18:51:18+00:00,Merge pull request #271723 from mjbvz/dev/mjbvz/exuberant-shark
+701d67038dc61dfb06ad56bef6215e430be50350,Rob Lourens,roblourens@gmail.com,2025-10-16T18:28:26+00:00,LanguageModelProxy disposable (#271607)
+271a53806100e11d4ad3ff9206a5f1de8945d50b,Bryan Chen,41454397+bryanchen-d@users.noreply.github.com,2025-10-16T17:53:48+00:00,Merge pull request #271414 from microsoft/brchen/chat-autoClosingBrackets
+a1a256617fcdca6fd9593d54da0569ba2b6e493f,Matt Bierner,12821956+mjbvz@users.noreply.github.com,2025-10-16T17:45:00+00:00,"Add `resource` to chat session, replacing id"
+329b9861c51789c4ba8aaeaab87882ee6f4cf299,Connor Peet,copeet@microsoft.com,2025-10-16T16:33:28+00:00,debug: fix mislocalized string (#271707)
+6d0d29a429998a5e3f66d103b5c93e9df9ddfcbf,Copilot,198982749+Copilot@users.noreply.github.com,2025-10-16T16:00:20+00:00,Fix High Contrast Light theme icon selection in tree views (#271653)
+b1d81821c49446f446dbda614982ffa1e04b4541,Lee Murray,mrleemurray@gmail.com,2025-10-16T14:11:57+00:00,Merge pull request #271693 from microsoft:mrleemurray/underground-minnow-green
+71b8165adb249038e7233f3677c28ec524209d9a,Benjamin Pasero,benjamin.pasero@gmail.com,2025-10-16T14:03:36+00:00,files - clarify watch behaviour better around how delete operations are handled (#271674)
+d1e5492917548c8298ca20ecc84b556dd806f5ff,mrleemurray,lee.murray@microsoft.com,2025-10-16T13:47:32+00:00,feat(codicons): add 'open-in-product' icon (0xec65) and update codicon.ttf
+88c209229b6d89d8b9e362f9f57ed59234f4d1c3,Martin Aeschlimann,martinae@microsoft.com,2025-10-16T13:39:52+00:00,yaml parser: fix property values on next line (#271673)
+00f67f5aef7c0e9d7c35d8c51e85940df5aa44d0,mrleemurray,lee.murray@microsoft.com,2025-10-16T12:42:41+00:00,update close icon and add strikethrough icon
